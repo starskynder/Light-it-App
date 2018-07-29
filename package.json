@@ -1,0 +1,14 @@
+{
+  "name": "light-it-app",
+  "version": "1.0.0",
+  "description": "Template website for the App-creator  Company Light it App",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --output-style expanded --recursive "
+  },
+  "author": "starskynder",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}

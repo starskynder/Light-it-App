@@ -12,6 +12,7 @@ body {
 
 body {
   background-color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 img {
@@ -31,6 +32,27 @@ header {
 
 nav {
   margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 1em;
+  background-color: #ef9f35;
+  justify-content: space-between;
+}
+
+/* ---------- Headings ------------ */
+h1 {
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+  padding: 1em;
+  font-size: 2.5em;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+h1 .secondary-color {
+  color: #ef9f35;
+}
+
+h1 .terziary-color {
+  color: #63c8cd;
 }
 
 /* -------- Nav -------------- */
@@ -38,26 +60,39 @@ nav {
   display: flex;
   list-style-type: none;
   flex-flow: column wrap;
-  margin-top: 0;
+  margin: 0;
   padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__item {
+  display: none;
 }
 
 .main-nav__menu {
   display: flex;
-  margin-right: 1em;
-  margin-left: auto;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin: auto;
 }
 
 .menu-line {
-  background-color: #000;
+  background-color: #fff;
   width: 24px;
   height: 3px;
   display: block;
   margin: 3px;
+}
+
+.logo {
+  display: block;
+  max-width: 100px;
 }

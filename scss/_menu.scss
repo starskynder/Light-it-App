@@ -1,33 +1,46 @@
+@import "variables";
+
 /* -------- Nav -------------- */
 
 .main-nav {
   display: flex;
   list-style-type: none;
   flex-flow: column wrap;
-  margin-top: 0;
+  margin: 0;
   padding: 0.5em;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .main-nav__item {
-  // display: none;
+  display: none;
 }
 
 .main-nav__menu {
   display: flex;
-  margin-right: 1em;
-  margin-left: auto;
+
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__btn {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin: auto;
 }
 
 .menu-line {
-  background-color: #000;
+  background-color: $primary-color;
   width: 24px;
   height: 3px;
   display: block;
   margin: 3px;
+}
+
+.logo {
+  display: block;
+  max-width: 100px;
 }

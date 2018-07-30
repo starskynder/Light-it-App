@@ -1,0 +1,16 @@
+/* ---------- Headings ------------ */
+
+h1 {
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+  padding: 1em;
+  font-size: 2.5em;
+  background-color: rgba($primary-color, 0.3);
+
+  .secondary-color {
+    color: $secondary-color;
+  }
+
+  .terziary-color {
+    color: $terziary-color;
+  }
+}

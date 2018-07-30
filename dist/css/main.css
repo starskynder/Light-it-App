@@ -1,0 +1,63 @@
+/* ------------ General Styles----------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  height: 100vh;
+  background-image: url("../images/idea_2x_small.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 0;
+}
+
+/* -------- Nav -------------- */
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  flex-flow: column wrap;
+  margin-top: 0;
+  padding: 0.5em;
+}
+
+.main-nav__menu {
+  display: flex;
+  margin-right: 1em;
+  margin-left: auto;
+}
+
+.menu__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-line {
+  background-color: #000;
+  width: 24px;
+  height: 3px;
+  display: block;
+  margin: 3px;
+}

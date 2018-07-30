@@ -1,4 +1,11 @@
 /* ---------- Headings ------------ */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lekton", sans-serif;
+}
 
 h1 {
   font-family: "Anonymous Pro", "Courier New", Courier, monospace;
@@ -13,4 +20,14 @@ h1 {
   .terziary-color {
     color: $terziary-color;
   }
+}
+
+.secondary-heading {
+  font-size: 2em;
+}
+
+.terziary-heading {
+  font-size: 1.7em;
+  color: $secondary-color;
+  font-weight: bold;
 }

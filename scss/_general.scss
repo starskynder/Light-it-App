@@ -13,7 +13,12 @@ body {
 
 body {
   background-color: $primary-color;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 img {
@@ -38,4 +43,12 @@ nav {
   padding: 1em;
   background-color: $secondary-color;
   justify-content: space-between;
+}
+
+.icon {
+  max-width: 90px;
+}
+
+section {
+  padding: 1em;
 }

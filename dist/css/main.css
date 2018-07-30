@@ -1,3 +1,4 @@
+/* ---------- General mixins ---------- */
 /* ------------ General Styles----------- */
 * {
   box-sizing: border-box;
@@ -12,7 +13,11 @@ body {
 
 body {
   background-color: #fff;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 img {
@@ -39,7 +44,23 @@ nav {
   justify-content: space-between;
 }
 
+.icon {
+  max-width: 90px;
+}
+
+section {
+  padding: 1em;
+}
+
 /* ---------- Headings ------------ */
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lekton", sans-serif;
+}
+
 h1 {
   font-family: "Anonymous Pro", "Courier New", Courier, monospace;
   padding: 1em;
@@ -53,6 +74,16 @@ h1 .secondary-color {
 
 h1 .terziary-color {
   color: #63c8cd;
+}
+
+.secondary-heading {
+  font-size: 2em;
+}
+
+.terziary-heading {
+  font-size: 1.7em;
+  color: #ef9f35;
+  font-weight: bold;
 }
 
 /* -------- Nav -------------- */
@@ -95,4 +126,31 @@ h1 .terziary-color {
 .logo {
   display: block;
   max-width: 100px;
+}
+
+/* ---------- About ---------- */
+.about {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__box {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #63c8cd;
+  border-radius: 10px;
+  padding: 1em;
+  text-align: justify;
+  margin-bottom: 2em;
+}
+
+.about__icon {
+  border-radius: 50%;
+  display: block;
+  border: 3px solid #ef9f35;
+  padding: 1em;
 }

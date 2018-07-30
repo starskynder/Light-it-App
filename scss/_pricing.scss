@@ -1,0 +1,38 @@
+/* ---------- Pricing section ------------- */
+.pricing {
+  @include flex-col;
+
+  background-color: $secondary-color;
+}
+
+.pricing__box {
+  @include flex-col;
+
+  border: 4px double $secondary-color;
+  padding: 1em;
+  background-color: lighten($primary-color, 20);
+  margin-bottom: 1em;
+}
+
+.pricing__heading {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.5em;
+  color: darken($terziary-color, 20);
+}
+
+.pricing__heading,
+.pricing__price {
+  text-align: center;
+}
+
+.pricing__price {
+  display: block;
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.pricing__list {
+  list-style-type: square;
+  margin: 2em 0;
+}

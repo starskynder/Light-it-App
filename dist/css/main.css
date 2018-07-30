@@ -14,6 +14,7 @@ body {
 body {
   background-color: #fff;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #000;
 }
 
 p {
@@ -50,6 +51,23 @@ nav {
 
 section {
   padding: 1em;
+}
+
+button {
+  border: none;
+  background-color: #63c8cd;
+  padding: 1em;
+  font-size: 1em;
+  color: #000;
+}
+
+button:focus, button:hover {
+  background-color: #ef9f35;
+  color: #fff;
+}
+
+.txt-highlight {
+  font-weight: bold;
 }
 
 /* ---------- Headings ------------ */
@@ -153,4 +171,47 @@ h1 .terziary-color {
   display: block;
   border: 3px solid #ef9f35;
   padding: 1em;
+}
+
+/* ---------- Pricing section ------------- */
+.pricing {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef9f35;
+}
+
+.pricing__box {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  border: 4px double #ef9f35;
+  padding: 1em;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.pricing__heading {
+  font-weight: bold;
+  font-size: 2em;
+  margin: 0.5em;
+  color: #319499;
+}
+
+.pricing__heading,
+.pricing__price {
+  text-align: center;
+}
+
+.pricing__price {
+  display: block;
+  font-size: 2em;
+  padding: 0.5em;
+}
+
+.pricing__list {
+  list-style-type: square;
+  margin: 2em 0;
 }

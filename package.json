@@ -4,7 +4,7 @@
   "description": "Template website for the App-creator  Company Light it App",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --output-style expanded --recursive "
+    "sass": "node-sass  scss/ -o dist/css/ -w --output-style expanded --recursive "
   },
   "author": "starskynder",
   "license": "MIT",

@@ -1,0 +1,86 @@
+/* ------------ Feedback section ----- */
+.feedback {
+  display: flex;
+  position: relative;
+}
+
+.feedback__arrow {
+  color: $terziary-color;
+  border-radius: 50%;
+  background-color: $primary-color;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.arrow-left {
+  left: 10%;
+}
+
+.arrow-right {
+  right: 10%;
+}
+
+.feedback__img {
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 4px solid $primary-color;
+  max-width: 150px;
+  display: block;
+  margin: 1em;
+
+  @include easeInOut;
+}
+
+.feedback__box {
+  border-radius: 10px;
+  background-color: lighten($terziary-color, 10);
+  align-items: center;
+  padding: 1em 0;
+  border: 6px double $primary-color;
+  min-height: 600px;
+
+  @include easeInOut;
+
+  &:focus .feedback__img,
+  &:hover .feedback__img {
+    box-shadow: 0 0 0 4px $terziary-color, 0 0 0 8px $primary-color;
+  }
+}
+
+.feedback__box--invisible {
+  display: none;
+}
+
+.feedback__box--visible {
+  @include flex-col;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__name {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 2px solid $primary-color;
+}
+
+.feedback__text {
+  text-align: justify;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-style: italic;
+
+  &::before {
+    content: " ❝ ";
+  }
+
+  &::after {
+    content: " ❞ ";
+  }
+}

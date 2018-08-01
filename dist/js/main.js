@@ -9,6 +9,16 @@ function showHideMenu() {
   const mainNav = document.querySelector(".main-nav");
   mainNav.classList.toggle("js-main-nav--open");
 
+  const ariaExpanded = menuButton.getAttribute("aria-expanded");
+  console.log(ariaExpanded);
+
+  // Change aria-expanded value accordingly to navigation opened or closed
+  if (ariaExpanded === "true") {
+    menuButton.setAttribute("aria-expanded", false);
+  } else {
+    menuButton.setAttribute("aria-expanded", true);
+  }
+
   // Select lines of hamburger icon
   const menuLines = document.querySelectorAll(".menu-line");
 

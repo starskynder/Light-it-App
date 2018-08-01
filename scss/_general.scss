@@ -71,3 +71,12 @@ button {
 .txt-highlight {
   font-weight: bold;
 }
+
+a:link {
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}

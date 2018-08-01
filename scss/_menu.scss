@@ -1,35 +1,21 @@
 @import "variables";
 
 /* -------- Nav -------------- */
-
-.main-nav {
+nav {
   display: flex;
-  list-style-type: none;
-  flex-flow: column wrap;
-  margin: 0;
-  padding: 0.5em;
-
-  justify-content: center;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-.main-nav__item {
-  display: none;
-}
-
-.main-nav__menu {
-  display: flex;
-
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
+.logo {
+  display: block;
+  max-width: 100px;
+  margin-right: auto;
 }
 
 .menu__btn {
   border: none;
   background-color: transparent;
-  cursor: pointer;
-  margin: auto;
 }
 
 .menu-line {
@@ -40,7 +26,32 @@
   margin: 3px;
 }
 
-.logo {
-  display: block;
-  max-width: 100px;
+.main-nav {
+  display: none;
+  flex: 100%;
+  list-style-type: none;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-nav__item {
+  // display: none;
+  padding: 0.5em;
+}
+
+.main-nav__link {
+  color: $primary-color;
+  font-size: 1.3em;
+
+  &:visited {
+    color: $primary-color;
+  }
+
+  &:focus,
+  &:hover {
+    color: $solid-black;
+  }
 }

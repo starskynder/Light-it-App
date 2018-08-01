@@ -144,7 +144,7 @@ nav {
   transform: rotate(45deg);
 }
 
-.js-menu-line--cross:nth-last-of-type(2) {
+.js-menu-line--cross:nth-of-type(2) {
   visibility: hidden;
 }
 

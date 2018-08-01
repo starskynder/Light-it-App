@@ -1,13 +1,12 @@
 /* ---------- Pricing section ------------- */
 .pricing {
-  @include flex-col;
-
   background-color: $secondary-color;
 }
 
 .pricing__box {
   @include flex-col;
 
+  align-items: center;
   border: 4px double $secondary-color;
   padding: 1em;
   background-color: lighten($primary-color, 20);
@@ -35,4 +34,8 @@
 .pricing__list {
   list-style-type: square;
   margin: 2em 0;
+}
+
+.pricing__btn {
+  min-width: 70%;
 }

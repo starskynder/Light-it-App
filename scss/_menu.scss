@@ -24,8 +24,7 @@ nav {
   height: 3px;
   display: block;
   margin: 3px;
-
-  @include easeInOut;
+  transition: all 0.2s linear;
 }
 
 .js-menu-line--cross:first-of-type {

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ---------- General mixins ---------- */
 /* ------------ General Styles----------- */
 * {
@@ -137,7 +138,7 @@ nav {
   height: 3px;
   display: block;
   margin: 3px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.2s linear;
 }
 
 .js-menu-line--cross:first-of-type {
@@ -188,15 +189,12 @@ nav {
 .about {
   display: flex;
   flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
 }
 
 .about__box {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
   border: 3px solid #63c8cd;
   border-radius: 10px;
   padding: 1em;
@@ -213,10 +211,6 @@ nav {
 
 /* ---------- Pricing section ------------- */
 .pricing {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
   background-color: #ef9f35;
 }
 
@@ -224,7 +218,6 @@ nav {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
   border: 4px double #ef9f35;
   padding: 1em;
   background-color: white;
@@ -252,4 +245,93 @@ nav {
 .pricing__list {
   list-style-type: square;
   margin: 2em 0;
+}
+
+.pricing__btn {
+  min-width: 70%;
+}
+
+/* ------------ Feedback section ----- */
+.feedback {
+  display: flex;
+  position: relative;
+}
+
+.feedback__arrow {
+  color: #63c8cd;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.arrow-left {
+  left: 10%;
+}
+
+.arrow-right {
+  right: 10%;
+}
+
+.feedback__img {
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 4px solid #fff;
+  max-width: 150px;
+  display: block;
+  margin: 1em;
+  transition: all 0.4s ease-in-out;
+}
+
+.feedback__box {
+  border-radius: 10px;
+  background-color: #8ad6d9;
+  align-items: center;
+  padding: 1em 0;
+  border: 6px double #fff;
+  min-height: 600px;
+  transition: all 0.4s ease-in-out;
+}
+
+.feedback__box:focus .feedback__img,
+.feedback__box:hover .feedback__img {
+  box-shadow: 0 0 0 4px #63c8cd, 0 0 0 8px #fff;
+}
+
+.feedback__box--invisible {
+  display: none;
+}
+
+.feedback__box--visible {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feedback__name {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: 2px solid #fff;
+}
+
+.feedback__text {
+  text-align: justify;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.feedback__text::before {
+  content: " ❝ ";
+}
+
+.feedback__text::after {
+  content: " ❞ ";
 }

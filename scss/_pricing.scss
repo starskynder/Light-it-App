@@ -1,6 +1,7 @@
 /* ---------- Pricing section ------------- */
 .pricing {
   background-color: $secondary-color;
+  padding: 4em 1em;
 }
 
 .pricing__box {
@@ -10,7 +11,7 @@
   border: 4px double $secondary-color;
   padding: 1em;
   background-color: lighten($primary-color, 20);
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .pricing__heading {

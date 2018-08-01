@@ -212,6 +212,7 @@ nav {
 /* ---------- Pricing section ------------- */
 .pricing {
   background-color: #ef9f35;
+  padding: 4em 1em;
 }
 
 .pricing__box {
@@ -221,7 +222,7 @@ nav {
   border: 4px double #ef9f35;
   padding: 1em;
   background-color: white;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .pricing__heading {

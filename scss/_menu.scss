@@ -24,21 +24,38 @@ nav {
   height: 3px;
   display: block;
   margin: 3px;
+
+  @include easeInOut;
+}
+
+.js-menu-line--cross:first-of-type {
+  transform: rotate(45deg);
+}
+
+.js-menu-line--cross:nth-last-of-type(2) {
+  visibility: hidden;
+}
+
+.js-menu-line--cross:nth-of-type(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
 }
 
 .main-nav {
-  display: none;
   flex: 100%;
+  display: none;
   list-style-type: none;
   flex-flow: column wrap;
   margin: 0;
-  padding: 0.5em;
+  padding: 1em;
   justify-content: center;
   align-items: center;
 }
 
+.js-main-nav--open {
+  display: flex;
+}
+
 .main-nav__item {
-  // display: none;
   padding: 0.5em;
 }
 

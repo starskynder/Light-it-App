@@ -52,3 +52,10 @@
   font-size: 1.5em;
   padding: 5px;
 }
+
+.blog__btn {
+  &:focus,
+  &:hover {
+    background-color: darken($secondary-color, 20);
+  }
+}

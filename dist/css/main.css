@@ -392,3 +392,7 @@ nav {
   font-size: 1.5em;
   padding: 5px;
 }
+
+.blog__btn:focus, .blog__btn:hover {
+  background-color: #b06a0e;
+}

@@ -77,5 +77,12 @@ accordionButton.forEach(v => {
 // Shows accordion text if hidden else hide it.
 function showText(e) {
   e.target.classList.toggle("active");
+  let isExpanded = e.target.getAttribute("aria-expanded");
+  if (isExpanded === "false") {
+    e.target.setAttribute("aria-expanded", "true");
+  } else if (isExpanded === "true") {
+    e.target.setAttribute("aria-expanded", "false");
+  }
+
   e.target.nextElementSibling.classList.toggle("active");
 }

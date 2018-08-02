@@ -57,7 +57,7 @@ nav {
 }
 
 section {
-  padding: 1em;
+  padding: 4em 1em;
 }
 
 button {
@@ -88,5 +88,6 @@ a {
 }
 
 footer {
-  background-color: $secondary-color;
+  background-color: darken($terziary-color, 30);
+  color: $primary-color;
 }

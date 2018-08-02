@@ -256,6 +256,7 @@ nav {
 .feedback {
   display: flex;
   position: relative;
+  background-color: #eaf8f8;
 }
 
 .feedback__arrow {
@@ -346,12 +347,14 @@ nav {
 .blog__box {
   display: flex;
   flex-flow: column wrap;
+  background-color: #fff;
   border: 2px solid #ef9f35;
   margin: 1em 0;
 }
 
 .blog__heading {
   background-color: #ef9f35;
+  padding: 0.5em;
   font-size: 2em;
 }
 
@@ -395,4 +398,57 @@ nav {
 
 .blog__btn:focus, .blog__btn:hover {
   background-color: #b06a0e;
+}
+
+/* -------- The staff ---------- */
+.staff,
+.staff__goals,
+.staff__presentation {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.staff {
+  background-color: #fef9f2;
+}
+
+.staff__head h2 {
+  text-align: center;
+  color: #256f72;
+}
+
+.staff__presentation {
+  border: 3px solid #fff;
+  background-color: #fff;
+  margin: 1em 0;
+}
+
+.staff__btn {
+  position: relative;
+  font-size: 1.3em;
+  transition: all 0.4s ease-in-out;
+}
+
+.staff__btn::after {
+  font-size: 1.3em;
+  content: " +";
+  float: right;
+}
+
+.staff__btn.active {
+  color: #fff;
+  background-color: #ef9f35;
+}
+
+.staff__btn.active::after {
+  content: " −";
+}
+
+.staff__text {
+  display: none;
+  padding: 0.5em;
+}
+
+.staff__text.active {
+  display: flex;
 }

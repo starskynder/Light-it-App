@@ -2,6 +2,7 @@
 .feedback {
   display: flex;
   position: relative;
+  background-color: lighten($terziary-color, 35);
 }
 
 .feedback__arrow {

@@ -573,3 +573,12 @@ nav {
   background-color: #ef9f35;
   color: #000;
 }
+
+/* ---------- Credits ---------- */
+.credits a {
+  color: #ef9f35;
+}
+
+.credits a:focus, .credits a:hover {
+  color: #fff;
+}

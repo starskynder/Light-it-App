@@ -28,6 +28,11 @@ img {
   height: auto;
 }
 
+input,
+textarea {
+  border: none;
+}
+
 header {
   height: 90vh;
   background-image: url("../images/idea_2x_small.jpg");
@@ -80,4 +85,8 @@ a {
   &:hover {
     text-decoration: underline;
   }
+}
+
+footer {
+  background-color: $secondary-color;
 }

@@ -15,8 +15,7 @@ body {
 body {
   background-color: #fff;
   color: #000;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #000;
 }
 
@@ -27,6 +26,11 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+input,
+textarea {
+  border: none;
 }
 
 header {
@@ -64,8 +68,7 @@ button {
   color: #000;
 }
 
-button:focus,
-button:hover {
+button:focus, button:hover {
   background-color: #ef9f35;
   color: #fff;
 }
@@ -78,9 +81,12 @@ a {
   text-decoration: none;
 }
 
-a:focus,
-a:hover {
+a:focus, a:hover {
   text-decoration: underline;
+}
+
+footer {
+  background-color: #ef9f35;
 }
 
 /* ---------- Headings ------------ */
@@ -114,7 +120,7 @@ h1 .terziary-color {
 
 .terziary-heading {
   font-size: 1.7em;
-  color: #ef9f35;
+  color: #c87910;
   font-weight: bold;
 }
 
@@ -185,8 +191,7 @@ nav {
   color: #fff;
 }
 
-.main-nav__link:focus,
-.main-nav__link:hover {
+.main-nav__link:focus, .main-nav__link:hover {
   color: #000;
 }
 
@@ -265,7 +270,7 @@ nav {
 }
 
 .feedback__arrow {
-  color: #63c8cd;
+  color: #319499;
   border-radius: 50%;
   background-color: #fff;
   position: absolute;
@@ -383,7 +388,7 @@ nav {
   display: block;
   width: 80px;
   height: 80px;
-  background-color: #319499;
+  background-color: #256f72;
   bottom: -10%;
   right: 5%;
   text-transform: uppercase;
@@ -396,13 +401,12 @@ nav {
 
 .blog__activity {
   background-color: #ef9f35;
-  color: #fff;
+  color: #0c2425;
   font-size: 1.5em;
   padding: 5px;
 }
 
-.blog__btn:focus,
-.blog__btn:hover {
+.blog__btn:focus, .blog__btn:hover {
   background-color: #b06a0e;
 }
 
@@ -463,4 +467,39 @@ nav {
 
 .staff__text.active {
   display: flex;
+}
+
+/* ---------- Contact ------------- */
+.contact {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+}
+
+.contact form {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.contact form input[type="submit"] {
+  background-color: #256f72;
+  color: #fff;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.contact form input[type="submit"]:focus, .contact form input[type="submit"]:hover {
+  background-color: #814e0a;
+  border-radius: 0;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact__input {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  padding: 0.5em;
+  border-radius: 5px;
 }

@@ -29,6 +29,6 @@ h1 {
 
 .terziary-heading {
   font-size: 1.7em;
-  color: $secondary-color;
+  color: darken($secondary-color, 15);
   font-weight: bold;
 }

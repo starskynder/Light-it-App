@@ -37,7 +37,7 @@
   display: block;
   width: 80px;
   height: 80px;
-  background-color: darken($terziary-color, 20);
+  background-color: darken($terziary-color, 30);
   bottom: -10%;
   right: 5%;
   text-transform: uppercase;
@@ -50,7 +50,7 @@
 
 .blog__activity {
   background-color: $secondary-color;
-  color: $primary-color;
+  color: darken($terziary-color, 50);
   font-size: 1.5em;
   padding: 5px;
 }

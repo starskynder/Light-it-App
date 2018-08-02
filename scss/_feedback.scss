@@ -6,7 +6,7 @@
 }
 
 .feedback__arrow {
-  color: $terziary-color;
+  color: darken($terziary-color, 20);
   border-radius: 50%;
   background-color: $primary-color;
   position: absolute;

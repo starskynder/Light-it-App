@@ -1,0 +1,39 @@
+/* ---------- Social ----------- */
+.social {
+  @include flex-col;
+
+  h2 {
+    text-align: center;
+  }
+
+  input[type="email"] {
+    padding: 0.5em;
+  }
+
+  input[type="submit"] {
+    background-color: $secondary-color;
+    padding: 0.5em;
+  }
+}
+
+.social__mailing,
+.social__icons {
+  padding: 1em;
+  display: flex;
+
+  i {
+    font-size: 2.3em;
+    margin: 0.2em;
+    color: $primary-color;
+    padding: 0.3em;
+    border-radius: 5px;
+
+    @include easeInOut;
+
+    &:focus,
+    &:hover {
+      background-color: $secondary-color;
+      color: $solid-black;
+    }
+  }
+}

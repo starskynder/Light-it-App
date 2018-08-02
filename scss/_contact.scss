@@ -2,20 +2,18 @@
 .contact {
   @include flex-col;
 
-  padding: 1em;
-
   form {
     @include flex-col;
 
     input[type="submit"] {
-      background-color: darken($terziary-color, 30);
+      background-color: $secondary-color;
       color: $primary-color;
       padding: 1em;
       border-radius: 5px;
 
       &:focus,
       &:hover {
-        background-color: darken($secondary-color, 30);
+        background-color: $terziary-color;
         border-radius: 0;
       }
     }

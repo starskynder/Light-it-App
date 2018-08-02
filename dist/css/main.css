@@ -57,7 +57,7 @@ nav {
 }
 
 section {
-  padding: 1em;
+  padding: 4em 1em;
 }
 
 button {
@@ -86,7 +86,8 @@ a:focus, a:hover {
 }
 
 footer {
-  background-color: #ef9f35;
+  background-color: #256f72;
+  color: #fff;
 }
 
 /* ---------- Headings ------------ */
@@ -473,7 +474,6 @@ nav {
 .contact {
   display: flex;
   flex-flow: column wrap;
-  padding: 1em;
 }
 
 .contact form {
@@ -482,14 +482,14 @@ nav {
 }
 
 .contact form input[type="submit"] {
-  background-color: #256f72;
+  background-color: #ef9f35;
   color: #fff;
   padding: 1em;
   border-radius: 5px;
 }
 
 .contact form input[type="submit"]:focus, .contact form input[type="submit"]:hover {
-  background-color: #814e0a;
+  background-color: #63c8cd;
   border-radius: 0;
 }
 
@@ -502,4 +502,30 @@ nav {
   margin-bottom: 2em;
   padding: 0.5em;
   border-radius: 5px;
+}
+
+/* ------------- Services --------- */
+.services {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-top: 1px solid #ef9f35;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  padding: 1em;
+}
+
+.services__link {
+  color: #fff;
 }

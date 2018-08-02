@@ -1,0 +1,12 @@
+/* ---------- Credits ---------- */
+
+.credits {
+  a {
+    color: $secondary-color;
+
+    &:focus,
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}

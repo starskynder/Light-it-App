@@ -15,7 +15,8 @@ body {
 body {
   background-color: #fff;
   color: #000;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   color: #000;
 }
 
@@ -63,7 +64,8 @@ button {
   color: #000;
 }
 
-button:focus, button:hover {
+button:focus,
+button:hover {
   background-color: #ef9f35;
   color: #fff;
 }
@@ -72,11 +74,12 @@ button:focus, button:hover {
   font-weight: bold;
 }
 
-a:link {
+a {
   text-decoration: none;
 }
 
-a:link:focus, a:link:hover {
+a:focus,
+a:hover {
   text-decoration: underline;
 }
 
@@ -182,7 +185,8 @@ nav {
   color: #fff;
 }
 
-.main-nav__link:focus, .main-nav__link:hover {
+.main-nav__link:focus,
+.main-nav__link:hover {
   color: #000;
 }
 
@@ -397,7 +401,8 @@ nav {
   padding: 5px;
 }
 
-.blog__btn:focus, .blog__btn:hover {
+.blog__btn:focus,
+.blog__btn:hover {
   background-color: #b06a0e;
 }
 

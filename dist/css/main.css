@@ -14,6 +14,7 @@ body {
 
 body {
   background-color: #fff;
+  color: #000;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #000;
 }
@@ -432,6 +433,11 @@ nav {
 .staff__btn::after {
   font-size: 1.3em;
   content: " +";
+  background-color: #ef9f35;
+  border-radius: 50%;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #fff;
   float: right;
 }
 
@@ -442,6 +448,7 @@ nav {
 
 .staff__btn.active::after {
   content: " −";
+  background-color: #63c8cd;
 }
 
 .staff__text {

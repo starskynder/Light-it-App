@@ -2,7 +2,7 @@
 
 .credits {
   a {
-    color: $secondary-color;
+    color: lighten($secondary-color, 30);
 
     &:focus,
     &:hover {

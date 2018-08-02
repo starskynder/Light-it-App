@@ -483,7 +483,7 @@ nav {
 
 .contact form input[type="submit"] {
   background-color: #ef9f35;
-  color: #fff;
+  color: #000;
   padding: 1em;
   border-radius: 5px;
 }
@@ -576,7 +576,7 @@ nav {
 
 /* ---------- Credits ---------- */
 .credits a {
-  color: #ef9f35;
+  color: #fae2c3;
 }
 
 .credits a:focus, .credits a:hover {

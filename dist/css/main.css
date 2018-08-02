@@ -508,7 +508,7 @@ nav {
 .services {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 .services h2 {
@@ -519,6 +519,7 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .services__item {
@@ -533,6 +534,7 @@ nav {
 .social {
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
 }
 
 .social h2 {
@@ -550,8 +552,9 @@ nav {
 
 .social__mailing,
 .social__icons {
-  padding: 1em;
   display: flex;
+  justify-content: center;
+  padding: 1em;
 }
 
 .social__mailing i,

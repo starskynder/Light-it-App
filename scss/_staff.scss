@@ -1,0 +1,53 @@
+/* -------- The staff ---------- */
+.staff,
+.staff__goals,
+.staff__presentation {
+  @include flex-col;
+}
+
+.staff {
+  background-color: lighten($secondary-color, 40);
+}
+
+.staff__head {
+  h2 {
+    text-align: center;
+    color: darken($terziary-color, 30);
+  }
+}
+
+.staff__presentation {
+  border: 3px solid $primary-color;
+  background-color: $primary-color;
+  margin: 1em 0;
+}
+
+.staff__btn {
+  position: relative;
+  font-size: 1.3em;
+
+  @include easeInOut;
+
+  &::after {
+    font-size: 1.3em;
+    content: " +";
+    float: right;
+  }
+
+  &.active {
+    color: $primary-color;
+    background-color: $secondary-color;
+    &::after {
+      content: " −";
+    }
+  }
+}
+
+.staff__text {
+  display: none;
+  padding: 0.5em;
+
+  &.active {
+    display: flex;
+  }
+}

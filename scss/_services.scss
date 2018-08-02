@@ -1,0 +1,26 @@
+/* ------------- Services --------- */
+.services {
+  @include flex-col;
+
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+  }
+
+  border-top: 1px solid $secondary-color;
+}
+
+.services__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services__item {
+  padding: 1em;
+}
+
+.services__link {
+  color: $primary-color;
+}

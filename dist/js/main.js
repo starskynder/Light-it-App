@@ -65,3 +65,17 @@ function slideImage(n) {
 
   feedbackBoxes[slideIndex].classList.add("feedback__box--visible");
 }
+
+//Select accordion buttons in the  staff section
+const accordionButton = document.querySelectorAll(".staff__btn");
+
+// Set event listener for accordion buttons
+accordionButton.forEach(v => {
+  v.addEventListener("click", showText);
+});
+
+// Shows accordion text if hidden else hide it.
+function showText(e) {
+  e.target.classList.toggle("active");
+  e.target.nextElementSibling.classList.toggle("active");
+}

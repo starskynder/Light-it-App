@@ -1,18 +1,19 @@
 /* ---------- About ---------- */
 
 .about {
-  @include flex-col;
+  @include flex-row;
 }
 
 .about__box {
   @include flex-col;
 
+  flex: 1 1 320px;
   align-items: center;
   border: 3px solid $terziary-color;
   border-radius: 10px;
   padding: 1em;
   text-align: justify;
-  margin-bottom: 2em;
+  margin: 2em 1em;
 }
 
 .about__icon {

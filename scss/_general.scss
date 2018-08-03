@@ -88,6 +88,8 @@ a {
 }
 
 footer {
+  @include flex-row;
+
   background-color: darken($terziary-color, 30);
   color: $primary-color;
 }

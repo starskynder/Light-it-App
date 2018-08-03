@@ -1,5 +1,7 @@
 /* ---------- Pricing section ------------- */
 .pricing {
+  @include flex-row;
+
   background-color: $secondary-color;
   padding: 4em 1em;
 }
@@ -8,10 +10,11 @@
   @include flex-col;
 
   align-items: center;
+  flex: 1 1 45%;
   border: 4px double $secondary-color;
   padding: 1em;
   background-color: lighten($primary-color, 20);
-  margin-bottom: 2em;
+  margin: 2em 1em;
 }
 
 .pricing__heading {
@@ -39,4 +42,5 @@
 
 .pricing__btn {
   min-width: 70%;
+  margin-top: auto;
 }

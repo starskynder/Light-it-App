@@ -2,8 +2,12 @@
 .contact {
   @include flex-col;
 
+  flex: 1 1 400px;
+
   form {
     @include flex-col;
+
+    padding: 2em;
 
     input[type="submit"] {
       background-color: $secondary-color;

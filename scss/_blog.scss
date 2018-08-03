@@ -1,14 +1,15 @@
 /* ------------- Blog --------------- */
 .blog {
-  @include flex-col;
+  @include flex-row;
 }
 
 .blog__box {
   @include flex-col;
 
+  max-width: 420px;
   background-color: $primary-color;
   border: 2px solid $secondary-color;
-  margin: 1em 0;
+  margin: 2em 1em;
 }
 
 .blog__heading {
@@ -56,6 +57,7 @@
 }
 
 .blog__btn {
+  margin-top: auto;
   &:focus,
   &:hover {
     background-color: darken($secondary-color, 20);

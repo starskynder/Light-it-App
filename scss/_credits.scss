@@ -1,6 +1,9 @@
 /* ---------- Credits ---------- */
 
 .credits {
+  flex: 1 1 100%;
+  text-align: center;
+
   a {
     color: lighten($secondary-color, 30);
 

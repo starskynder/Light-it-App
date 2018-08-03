@@ -2,6 +2,7 @@
 .services {
   @include flex-col;
 
+  flex: 1 1 400px;
   align-items: center;
 
   h2 {

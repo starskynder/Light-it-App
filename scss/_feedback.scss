@@ -1,7 +1,9 @@
 /* ------------ Feedback section ----- */
 .feedback {
-  display: flex;
+  @include flex-col;
+
   position: relative;
+  justify-content: center;
   background-color: lighten($terziary-color, 35);
 }
 
@@ -76,6 +78,7 @@
   padding: 1em;
   margin-bottom: 1em;
   font-style: italic;
+  max-width: 500px;
 
   &::before {
     content: " ❝ ";

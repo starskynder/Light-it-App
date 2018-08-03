@@ -1,4 +1,9 @@
 /* ---------- General mixins ---------- */
+@mixin flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
 @mixin flex-col {
   display: flex;

@@ -61,6 +61,22 @@
     font-size: 2em;
   }
 
+  nav {
+    flex-wrap: nowrap;
+  }
+
+  .menu__btn {
+    display: none;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: auto;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
   .contact,
   .services,
   .social {
@@ -75,6 +91,10 @@
 
   .about__box {
     flex: 25%;
+  }
+
+  .main-nav__link {
+    font-size: 1.5em;
   }
 
   .staff,

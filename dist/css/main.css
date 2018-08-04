@@ -33,6 +33,10 @@ textarea {
   border: none;
 }
 
+input {
+  min-width: 0;
+}
+
 header {
   height: 90vh;
   background-image: url("../images/idea_2x_small.jpg");
@@ -299,9 +303,10 @@ nav {
 }
 
 .feedback__arrow {
-  color: #319499;
+  color: #fff;
   border-radius: 50%;
-  background-color: #fff;
+  border: 2px solid #fff;
+  background-color: #ef9f35;
   position: absolute;
   width: 40px;
   height: 40px;
@@ -322,9 +327,10 @@ nav {
   border-radius: 50%;
   box-sizing: content-box;
   border: 4px solid #fff;
+  box-shadow: 0 0 0 8px #ef9f35, 0 0 0 12px #fff;
   max-width: 150px;
   display: block;
-  margin: 1em;
+  margin: 3em 2em;
   transition: all 0.4s ease-in-out;
 }
 
@@ -340,7 +346,8 @@ nav {
 
 .feedback__box:focus .feedback__img,
 .feedback__box:hover .feedback__img {
-  box-shadow: 0 0 0 4px #63c8cd, 0 0 0 8px #fff;
+  border: 4px solid #ef9f35;
+  box-shadow: 0 0 0 8px #fff, 0 0 0 12px #ef9f35;
 }
 
 .feedback__box--invisible {
@@ -537,13 +544,14 @@ nav {
 .contact {
   display: flex;
   flex-flow: column wrap;
+  padding: 0.5em;
   flex: 1 1 400px;
 }
 
 .contact form {
   display: flex;
   flex-flow: column wrap;
-  padding: 2em;
+  padding: 0.5em 0.3em;
 }
 
 .contact form input[type="submit"] {
@@ -602,6 +610,7 @@ nav {
   flex-flow: column wrap;
   flex: 1 1 40%;
   align-items: center;
+  max-width: 100%;
 }
 
 .social h2 {
@@ -621,7 +630,7 @@ nav {
 .social__icons {
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .social__mailing i,
@@ -656,6 +665,15 @@ nav {
 }
 
 /* ------------ Media Queries--------------- */
+@media screen and (min-width: 400px) {
+  h1 {
+    font-size: 3em;
+  }
+  .contact {
+    padding: 2em;
+  }
+}
+
 @media screen and (min-width: 600px) {
   header {
     background-image: url("../images/idea_2x_large.jpg");
@@ -678,9 +696,27 @@ nav {
   }
 }
 
+@media screen and (min-width: 900px) {
+  header {
+    position: relative;
+  }
+  h1 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-10%, -10%);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   header {
     background-image: url("../images/idea_2x_xl.jpg");
+  }
+  h1 {
+    font-size: 4em;
+  }
+  .secondary-heading {
+    font-size: 2em;
   }
   .contact,
   .services,
@@ -690,6 +726,9 @@ nav {
 }
 
 @media screen and (min-width: 1500px) {
+  h1 {
+    font-size: 5em;
+  }
   .about__box {
     flex: 25%;
   }
@@ -697,7 +736,7 @@ nav {
   .about,
   .feedback,
   .footer {
-    padding: 6em;
+    padding: 8em 6em;
   }
   .staff__img {
     height: 600px;

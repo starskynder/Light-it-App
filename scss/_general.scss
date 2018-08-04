@@ -33,6 +33,10 @@ textarea {
   border: none;
 }
 
+input {
+  min-width: 0;
+}
+
 header {
   height: 90vh;
   background-image: url("../images/idea_2x_small.jpg");

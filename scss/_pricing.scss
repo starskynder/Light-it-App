@@ -4,6 +4,11 @@
 
   background-color: $secondary-color;
   padding: 4em 1em;
+
+  h2 {
+    flex: 100%;
+    text-align: center;
+  }
 }
 
 .pricing__box {
@@ -11,6 +16,7 @@
 
   align-items: center;
   flex: 1 1 45%;
+  max-width: 500px;
   border: 4px double $secondary-color;
   padding: 1em;
   background-color: lighten($primary-color, 20);

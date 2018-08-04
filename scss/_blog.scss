@@ -1,6 +1,11 @@
 /* ------------- Blog --------------- */
 .blog {
   @include flex-row;
+
+  h2 {
+    flex: 100%;
+    text-align: center;
+  }
 }
 
 .blog__box {

@@ -1,31 +1,52 @@
 /* -------- The staff ---------- */
-.staff,
-.staff__goals,
-.staff__presentation {
-  @include flex-col;
-}
 
 .staff {
+  @include flex-col;
+
   background-color: lighten($secondary-color, 40);
-  align-content: center;
 }
 
-.staff__head {
-  h2 {
-    text-align: center;
-    color: darken($terziary-color, 30);
-  }
+.staff__goals {
+  @include flex-row;
+
+  min-width: 100%;
+}
+
+.staff__wrapper {
+  @include flex-col;
+
+  width: 100%;
 }
 
 .staff__presentation {
+  @include flex-col;
+
+  min-width: 100%;
   border: 3px solid $primary-color;
   background-color: $primary-color;
   margin: 1em 0;
 }
 
+.staff__img {
+  background-image: url("../images/thestaff_small_2x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.staff__heading {
+  text-align: center;
+  color: darken($terziary-color, 30);
+}
+
 .staff__btn {
   position: relative;
   font-size: 1.3em;
+  width: 100%;
 
   @include easeInOut;
 
@@ -43,6 +64,7 @@
   &.active {
     color: $primary-color;
     background-color: $secondary-color;
+
     &::after {
       content: " −";
       background-color: $terziary-color;

@@ -5,6 +5,10 @@
   position: relative;
   justify-content: center;
   background-color: lighten($terziary-color, 35);
+
+  h2 {
+    text-align: center;
+  }
 }
 
 .feedback__arrow {

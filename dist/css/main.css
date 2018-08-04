@@ -119,7 +119,8 @@ h1 .terziary-color {
 }
 
 .secondary-heading {
-  font-size: 2em;
+  font-size: 1.7em;
+  margin-bottom: 2em;
 }
 
 .terziary-heading {
@@ -206,6 +207,11 @@ nav {
   justify-content: center;
 }
 
+.about h2 {
+  flex: 100%;
+  text-align: center;
+}
+
 .about__box {
   display: flex;
   flex-flow: column wrap;
@@ -234,11 +240,17 @@ nav {
   padding: 4em 1em;
 }
 
+.pricing h2 {
+  flex: 100%;
+  text-align: center;
+}
+
 .pricing__box {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
   flex: 1 1 45%;
+  max-width: 500px;
   border: 4px double #ef9f35;
   padding: 1em;
   background-color: white;
@@ -280,6 +292,10 @@ nav {
   position: relative;
   justify-content: center;
   background-color: #eaf8f8;
+}
+
+.feedback h2 {
+  text-align: center;
 }
 
 .feedback__arrow {
@@ -369,6 +385,11 @@ nav {
   justify-content: center;
 }
 
+.blog h2 {
+  flex: 100%;
+  text-align: center;
+}
+
 .blog__box {
   display: flex;
   flex-flow: column wrap;
@@ -431,32 +452,54 @@ nav {
 }
 
 /* -------- The staff ---------- */
-.staff,
-.staff__goals,
+.staff {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #fef9f2;
+}
+
+.staff__goals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.staff__wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
 .staff__presentation {
   display: flex;
   flex-flow: column wrap;
-}
-
-.staff {
-  background-color: #fef9f2;
-  align-content: center;
-}
-
-.staff__head h2 {
-  text-align: center;
-  color: #256f72;
-}
-
-.staff__presentation {
+  min-width: 100%;
   border: 3px solid #fff;
   background-color: #fff;
   margin: 1em 0;
 }
 
+.staff__img {
+  background-image: url("../images/thestaff_small_2x.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.staff__heading {
+  text-align: center;
+  color: #256f72;
+}
+
 .staff__btn {
   position: relative;
   font-size: 1.3em;
+  width: 100%;
   transition: all 0.4s ease-in-out;
 }
 
@@ -600,7 +643,7 @@ nav {
 
 /* ---------- Credits ---------- */
 .credits {
-  flex: 1 1 100%;
+  flex: 0 0 100%;
   text-align: center;
 }
 
@@ -613,3 +656,50 @@ nav {
 }
 
 /* ------------ Media Queries--------------- */
+@media screen and (min-width: 600px) {
+  header {
+    background-image: url("../images/idea_2x_large.jpg");
+  }
+  .staff__goals {
+    flex-wrap: nowrap;
+  }
+  .staff__wrapper {
+    margin: 0 1em;
+    flex: 50%;
+  }
+  .staff__presentation {
+    margin-top: 0;
+  }
+  .staff__img {
+    background-image: url(../images/thestaff_medium_2x.jpg);
+    background-size: cover;
+    height: 500px;
+    flex: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    background-image: url("../images/idea_2x_xl.jpg");
+  }
+  .contact,
+  .services,
+  .social {
+    flex: 30%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .about__box {
+    flex: 25%;
+  }
+  .staff,
+  .about,
+  .feedback,
+  .footer {
+    padding: 6em;
+  }
+  .staff__img {
+    height: 600px;
+  }
+}

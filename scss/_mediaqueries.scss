@@ -1,1 +1,55 @@
 /* ------------ Media Queries--------------- */
+@include mediaMd {
+  header {
+    background-image: url("../images/idea_2x_large.jpg");
+  }
+
+  .staff__goals {
+    flex-wrap: nowrap;
+  }
+
+  .staff__wrapper {
+    margin: 0 1em;
+    flex: 50%;
+  }
+
+  .staff__presentation {
+    margin-top: 0;
+  }
+
+  .staff__img {
+    background-image: url(../images/thestaff_medium_2x.jpg);
+    background-size: cover;
+    height: 500px;
+    flex: 50%;
+  }
+}
+
+@include mediaLg {
+  header {
+    background-image: url("../images/idea_2x_xl.jpg");
+  }
+
+  .contact,
+  .services,
+  .social {
+    flex: 30%;
+  }
+}
+
+@include mediaXl {
+  .about__box {
+    flex: 25%;
+  }
+
+  .staff,
+  .about,
+  .feedback,
+  .footer {
+    padding: 6em;
+  }
+
+  .staff__img {
+    height: 600px;
+  }
+}

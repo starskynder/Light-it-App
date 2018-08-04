@@ -133,7 +133,7 @@ h1 .terziary-color {
   font-weight: bold;
 }
 
-/* -------- Nav -------------- */
+/* -------- Navigation -------------- */
 .logo {
   display: block;
   max-width: 100px;
@@ -301,6 +301,7 @@ h1 .terziary-color {
   border-radius: 50%;
   border: 2px solid #fff;
   background-color: #ef9f35;
+  padding: 0;
   position: absolute;
   width: 40px;
   height: 40px;

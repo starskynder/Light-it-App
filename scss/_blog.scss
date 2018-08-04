@@ -63,6 +63,7 @@
 
 .blog__btn {
   margin-top: auto;
+
   &:focus,
   &:hover {
     background-color: darken($secondary-color, 20);
